@@ -1,1 +1,53 @@
 /* You can add global styles to this file, and also import other style files */
+:root
+{
+    --bkgrnd-clr: #181818;
+    --txt-gray: #868686;
+    --dtls-gray: #3F3F40;
+    --hl-hver: #353535;
+}
+
+*{
+    background-color: var(--bkgrnd-clr);
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: var(--txt-gray);
+}
+section
+{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) repeat(1, 0.3fr) repeat(2, 1fr);
+    grid-template-rows: repeat(3, 0.75fr) repeat(2, 1.5fr) repeat(1, 0.5fr);
+    grid-template-areas: 
+    "menu-bar menu-bar menu-bar menu-bar  menu-bar" "big-cards big-cards big-cards menu-title menu-title" "big-cards big-cards big-cards menu-title menu-title" "big-cards big-cards big-cards small-cards small-cards" "big-cards big-cards big-cards small-cards small-cards" "footer-big-card footer-big-card footer-big-card small-cards small-cards";
+}
+MENU-BAR
+{
+    grid-area: menu-bar;
+}
+FOOTER-BIG-CARD
+{
+    grid-area: footer-big-card;
+}
+MENU-TITLE
+{
+    grid-area: menu-title;
+}
+.small-cards__placeholder
+{
+    grid-area: small-cards;
+}
+BIG-CARDS
+{
+    grid-area: big-cards;
+}
+FOOTER-BIG-CARD
+{
+    grid-area: footer-big-card;
+}
