@@ -5,10 +5,10 @@
 
     <div class="small-cards__text-container">
         <div class="small_cards__title">
-            <h3>{{ smallCardTitle }}</h3>
+            <h3><a [routerLink]="['content', Id]">{{ smallCardTitle }}</a></h3>
         </div>
         <div class="small_cards__text">
-            <span>{{ smallCardDescription }}</span>
+            <span><a [routerLink]="['content', Id]">{{ smallCardDescription }}</a></span>
         </div>
     </div>
 </div>

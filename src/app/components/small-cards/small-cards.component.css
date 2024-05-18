@@ -1,9 +1,16 @@
+
 .container__small-cards
 {
     display: flex;
     width: 100%;
     flex-direction: row;
-    height: 33%;
+    height: 30%;
+    background: rgb(41,41,41);
+    background: linear-gradient(90deg, rgba(41,41,41,1) 49%, rgba(24,24,24,1) 100%);
+}
+.container__small-cards:hover 
+{
+    background-color: grey;
 }
 .small-cards__img,
 .small-cards__text-container
@@ -30,18 +37,24 @@
 }
 .small-cards__text-container
 {
+    display: flex;
     flex-direction: column;
-    flex-basis: 70%;
-    width: 80%;
+    flex-basis: 60%;
     padding-right: 1.5rem;
+    row-gap: 1rem;
 }
-.small_cards__title h3
+.small_cards__title h3 a
 {
     font-size: 1.2rem;
     font-weight: bolder;
-    color: aliceblue;
+    color: var(--txt-alblue);
+    text-decoration: none;
 }
-.small_cards__text > span
+.small_cards__text > span a
 {
     font-size: 0.8rem;
+    text-decoration: none;
+    text-align: justify;
+    word-break: break-all;
+    hyphens: auto;
 }

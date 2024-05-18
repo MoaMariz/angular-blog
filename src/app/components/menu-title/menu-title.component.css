@@ -1,12 +1,21 @@
 *{
     height: 100%;
 }
+.container__title
+{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--bkgrnd-clr);
+}
 h1
 {
-    color: whitesmoke;
+    font-family: 'Pacifico', cursive;
+    color: var(--txt-title);
     font-size: 3rem;
     text-align: center;
     font-weight: bolder;
     padding-top: 2rem;
     padding-left: 4rem;
+    text-shadow: 0 0 10px #FFFFFF, 11px 0px 6px rgba(245,245,245,0);
+    background-color: transparent;
 }

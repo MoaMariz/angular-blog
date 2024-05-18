@@ -1,1 +1,15 @@
-<p>content works!</p>
+<div class="container__content">
+    <div class="content__cover">
+        <img src="{{ imgCover }}" alt="">
+    </div>
+    <div class="content__text">
+        <div class="content__title">
+          <h1>{{ contentTitle }}</h1>
+        </div>
+        <div class="content__description">
+            <p>{{ contentDescription }}</p>.
+        </div>
+        <a [routerLink]="['']"> BACK </a>
+    </div>
+    
+</div>

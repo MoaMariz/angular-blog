@@ -1,0 +1,50 @@
+section
+{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) repeat(1, 0.3fr) repeat(2, 1fr);
+    grid-template-rows: repeat(2, 0.75fr) repeat(2, 1.5fr) repeat(1, 0.5fr);
+    grid-template-areas: 
+    "big-cards big-cards big-cards menu-title menu-title" "big-cards big-cards big-cards menu-title menu-title" "big-cards big-cards big-cards small-cards small-cards" "big-cards big-cards big-cards small-cards small-cards" "footer-big-card footer-big-card footer-big-card small-cards small-cards";
+}
+FOOTER-BIG-CARD
+{
+    grid-area: footer-big-card;
+}
+MENU-TITLE
+{
+    grid-area: menu-title;
+}
+.small-cards__placeholder
+{
+    grid-area: small-cards;
+}
+BIG-CARDS
+{
+    grid-area: big-cards;
+}
+FOOTER-BIG-CARD
+{
+    grid-area: footer-big-card;
+}
+
+.small-cards__header
+{
+    height: 10%;
+    display: flex;
+    padding: 15px;
+    background: rgb(41,41,41);
+    background: linear-gradient(45deg, rgba(41,41,41,1) 41%, rgba(24,24,24,1) 93%);
+    border-top: 4px solid rgba(41,41,41,1);
+}
+.small-cards__header span,
+.small-cards__header p
+{
+    background-color: transparent;
+    font-weight: bold;
+}
+.small-cards__header span
+{
+    color: var(--txt-alblue);
+}
